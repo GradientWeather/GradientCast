@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradientCast — Clean Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(180deg, #b5d5ee 0%, #e8c5f1 100%);
+            --text-color: #1d1d1f;
+            --secondary-text: #6e6e73;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 90%;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 50px;
+            opacity: 0.8;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--secondary-text);
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            line-height: 1.5;
+        }
+
+        .app-screenshot {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 60px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .feature-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+            color: var(--secondary-text);
+            line-height: 1.4;
+        }
+
+        .motto {
+            margin-top: 80px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-color);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 40px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px solid currentColor;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>GradientCast</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Easy weather access.<br>Clean design.</h2>
+        <p>Experience weather tracking with an intuitive and clean interface. Built for those who value speed, aesthetics, and privacy.</p>
+        
+    </section>
+
+    <section class="features">
+        <div class="feature-item">
+            <h3>Clean Interface</h3>
+            <p>A clutter-free design focused on readability and modern style. No clutter—just the essential data.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Personalization</h3>
+            <p>Tailor the app’s visuals to match your personal style and preferences. Your weather, your way.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Battery-Efficient</h3>
+            <p>No background location tracking. We respect your privacy and your device's battery life.</p>
+        </div>
+    </section>
+
+    <p class="motto">Your data. Your style. Your weather.</p>
+</div>
+
+<footer>
+    <p>2026 GradientCast.
+        <a href="support.html">Support</a>
+    </p>
+</footer>
+
+</body>
+</html>
